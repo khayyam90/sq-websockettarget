@@ -31,7 +31,7 @@ export class drawer{
 
         let valeurPoint = Math.sqrt((ix*ix) + (iy*iy));        
 
-        // je considère que le diamètre du plomb vaut 0.3 zones, histoire de mieux compter les cordons, même s'il vaudrait mieux compter en mm
+        // je considère que le rayon du plomb vaut 0.3 zones, histoire de mieux compter les cordons, même s'il vaudrait mieux compter en mm
         valeurPoint = 10.9 - valeurPoint + .3;
         let valeurPointEntier = Math.floor(valeurPoint);
 

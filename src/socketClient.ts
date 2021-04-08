@@ -15,7 +15,11 @@ export class socketClient{
     }
 
     public run(){
-        this.connection = new WebSocket('ws://127.0.0.1:1234');
+        let wsHost = "127.0.0.1";
+        if (location.host){
+            wsHost = location.host;
+        }
+        this.connection = new WebSocket("ws://"+wsHost+":1234");
         this.connection.onmessage = this.onMessage.bind(this);
     }
 
