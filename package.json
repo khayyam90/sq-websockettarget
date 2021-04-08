@@ -1,0 +1,19 @@
+{
+  "name": "websockettarget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "websocket": "^1.0.33"
+  },
+  "devDependencies": {
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.3",
+    "webpack": "4.20.2"
+  }
+}
