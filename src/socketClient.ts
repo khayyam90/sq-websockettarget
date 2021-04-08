@@ -19,7 +19,8 @@ export class socketClient{
         if (location.host){
             wsHost = location.host;
         }
-        this.connection = new WebSocket("ws://"+wsHost+":1234");
+        let protocol = "ws";    
+        this.connection = new WebSocket(protocol + "://"+wsHost+":1234");
         this.connection.onmessage = this.onMessage.bind(this);
     }
 
